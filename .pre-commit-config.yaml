@@ -40,10 +40,10 @@ repos:
 #         exclude: package.lock.json
 ################################################################################
 # GitHub Actions
-# -   repo: https://github.com/rhysd/actionlint
-#     rev: v1.6.27
-#     hooks:
-#     -   id: actionlint
+-   repo: https://github.com/rhysd/actionlint
+    rev: v1.6.27
+    hooks:
+    -   id: actionlint
 ################################################################################
 # Make Files
 # -   repo: https://github.com/mrtazz/checkmake.git
