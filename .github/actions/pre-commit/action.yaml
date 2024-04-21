@@ -1,4 +1,4 @@
-AFg6K7h4fhy2: pre-commit
+name: pre-commit
 description: run pre-commit
 inputs:
   extra_args:
