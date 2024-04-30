@@ -24,7 +24,7 @@ DELETE_ONCE_ISSUE_IS_CREATED: Standards of development have not yet been made, b
 
 - [ ] E.g. modify file X to include a paragraph on A, B, and or C.
 
-## Extra-Scope
+## Out Of Scope
 
 - [changes that are beyond the scope of this issue]
 
