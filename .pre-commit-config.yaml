@@ -24,10 +24,6 @@ repos:
     -   id: isort
         args: ['--profile', 'black',
                '--line-length', '79']
--   repo: https://github.com/numpy/numpydoc
-    rev: v1.7.0
-    hooks:
-    -   id: numpydoc-validation
 -   repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.4.7
     hooks:
@@ -50,3 +46,41 @@ repos:
     hooks:
     -   id: commitizen
 ################################################################################
+# One can add the following at a future point for Python docstrings, if desired:
+
+# -   repo: https://github.com/numpy/numpydoc
+#     rev: v1.7.0
+#     hooks:
+#     -   id: numpydoc-validation
+
+# where the following would then be in the pyproject.toml file:
+
+# [tool.numpydoc_validation]
+# checks = [
+#     "GL03", # Double line break found
+#     "GL06", # Found unknown section
+#     "GL07", # Sections are in the wrong order
+#     "GL08", # The object does not have a docstring
+#     "GL10", # reST directives must be followed by two colons
+#     "SS01", # No summary found
+#     "SS02", # Summary does not start with a capital letter
+#     "SS03", # Summary does not end with a period
+#     "PR01", # Parameters not documented
+#     "PR02", # Unknown parameters
+#     "PR03", # Wrong parameters order
+#     "PR04", # Parameter has no type
+#     "PR07", # Parameter  has no description
+#     "PR08", # Parameter description should start with a capital letter
+#     "PR09", # Parameter description should finish with period
+#     "PR10", # Parameter requires a space before the colon
+#     "RT01", # No Returns section found
+#     "RT03", # Return value has no description
+#     "RT04", # Return value description should start with a capital letter
+#     "RT05", # Return value description should finish with period
+# ]
+# exclude = [  # don't report on objects that match any of these regex
+#     '\.undocumented_method$',
+#     '\.__repr__$',
+#     '\.__call__$',
+#     '\.__init__$',
+# ]
