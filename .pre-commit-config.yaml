@@ -32,11 +32,11 @@ repos:
         args: ['--ignore=E741', '--ignore=E731', '--fix']
 ################################################################################
 # R
--   repo: https://github.com/lorenzwalthert/precommit
-    rev: v0.4.3
-    hooks:
-    -   id: style-files
-    -   id: lintr
+# -   repo: https://github.com/lorenzwalthert/precommit
+#     rev: v0.4.3
+#     hooks:
+#     -   id: style-files
+#     -   id: lintr
 ################################################################################
 # Secrets
 # -   repo: https://github.com/Yelp/detect-secrets
@@ -47,10 +47,10 @@ repos:
 #         exclude: package.lock.json
 ################################################################################
 # GitHub Actions
-# -   repo: https://github.com/rhysd/actionlint
-#     rev: v1.7.1
-#     hooks:
-#     -   id: actionlint
+-   repo: https://github.com/rhysd/actionlint
+    rev: v1.7.1
+    hooks:
+    -   id: actionlint
 ################################################################################
 # Make Files
 # -   repo: https://github.com/mrtazz/checkmake.git
