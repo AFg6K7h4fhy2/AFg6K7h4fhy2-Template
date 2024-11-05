@@ -1,5 +1,5 @@
-# BLANK PROJECT
+# BLANK README
 
-This repository was generated from a template repository that AFg6K7h4fhy2 uses for their projects.
+This repository was generated from AFg6K7h4fhy2 [template repository](https://github.com/AFg6K7h4fhy2/AFg6K7h4fhy2-Template).
 
-For context on the decision made here, please check [here](https://github.com/AFg6K7h4fhy2/AFg6K7h4fhy2/tree/main/decisions).
+If you are seeing this message, then this repository likely contents no meaningful content.
