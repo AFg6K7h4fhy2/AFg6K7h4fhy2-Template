@@ -28,7 +28,7 @@ repos:
     -   id: isort
         args: ["--profile", "black", "--line-length", "79"]
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.7.2
+    rev: v0.8.1
     hooks:
       - id: ruff
         args: ["--ignore=E741", "--ignore=E731", "--fix"]
@@ -43,7 +43,7 @@ repos:
 # SPELLING
 ################################################################################
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.27.0
+    rev: v1.28.1
     hooks:
     -   id: typos
         args: ["--force-exclude"]
@@ -51,7 +51,7 @@ repos:
 # COMMIT MESSAGES
 ################################################################################
 -   repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.30.0
+    rev: v4.0.0
     hooks:
     -   id: commitizen
 ################################################################################
