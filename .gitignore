@@ -655,3 +655,5 @@ DS_Store
 _book/
 _book
 author_emails.txt
+# csv files must be converted to parquet files
+*.csv
