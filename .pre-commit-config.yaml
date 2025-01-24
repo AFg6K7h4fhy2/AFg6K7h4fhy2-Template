@@ -81,7 +81,7 @@ repos:
     -   id: isort
         args: ["--profile", "black", "--line-length", "79"]
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.8.2
+    rev: v0.9.3
     hooks:
       - id: ruff
         args: ["--ignore=E741", "--ignore=E731", "--fix"]
@@ -123,14 +123,14 @@ repos:
 # GITHUB ACTIONS
 ################################################################################
 -   repo: https://github.com/rhysd/actionlint
-    rev: v1.7.4
+    rev: v1.7.7
     hooks:
     -   id: actionlint
 ################################################################################
 # SPELLING
 ################################################################################
 -   repo: https://github.com/crate-ci/typos
-    rev: typos-dict-v0.11.37
+    rev: dictgen-v0.3.1
     hooks:
     -   id: typos
         args: ["--force-exclude"]
@@ -138,7 +138,7 @@ repos:
 # COMMIT MESSAGES
 ################################################################################
 -   repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.0.0
+    rev: v4.1.0
     hooks:
     -   id: commitizen
 -   repo: https://github.com/jorisroovers/gitlint
