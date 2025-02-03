@@ -1,8 +1,9 @@
 ################################################################################
 # OVERVIEW
 ################################################################################
-# The following contains the pre-commit hooks for this repository, which are
-# likely a modified version of the author's (AFg6K7h4fhy2) repository template.
+# The following file contains the pre-commit hooks for this repository, which
+# are likely a modified version of the configuration file from the author's
+# (AFg6K7h4fhy2) repository template.
 #
 # Links:
 #
@@ -69,12 +70,12 @@ repos:
 ################################################################################
 # PYTHON
 ################################################################################
--   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.1.0
-    hooks:
-    -   id: black
-        args: ["--line-length", "79"]
-        language_version: python3
+# -   repo: https://github.com/psf/black-pre-commit-mirror
+#     rev: 25.1.0
+#     hooks:
+#     -   id: black
+#         args: ["--line-length", "79"]
+#         language_version: python3
 -   repo: https://github.com/PyCQA/isort
     rev: 6.0.0
     hooks:
