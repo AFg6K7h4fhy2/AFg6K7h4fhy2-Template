@@ -84,16 +84,20 @@ repos:
         args: [
           "check",
           "--select",
-          "I", # isort
+          # isort
+          "I",
           "--fix"]
     # run ruff linter; the Ruff Linter is an extremely fast Python linter
     # designed as a drop-in replacement for Flake8 (plus dozens of plugins),
     # isort, pydocstyle, pyupgrade, autoflake, and more
     -   id: ruff
         args: [
-          "--ignore=E741", # ambiguous variable name: {name}
-          "--ignore=E731", # do not assign a lambda expression, use a def
-          "--ignore=W191", # indentation contains tabs (sorry, I like tabs)
+          # ambiguous variable name: {name}
+          "--ignore=E741",
+          # do not assign a lambda expression, use a def
+          "--ignore=E731",
+          # indentation contains tabs (sorry, I like tabs)
+          "--ignore=W191",
           # E and W: pycodestyle, standard PEP8 errors and pycodestyle warnings.
           # F: pyflakes warnings (e.g., unused variables, undefined names).,
           # B: flake8-bugbear (useful best practices).
@@ -102,7 +106,8 @@ repos:
           # UP: pyupgrade, Python version compatibility
           "--select=E,W,F,B,C90,UP,SIM",
           "--line-length=79",
-          "--fix"] # lint all files in the current directory, and fix any fixable errors.
+          # lint all files in the current directory, and fix any fixable errors.
+          "--fix"]
     # run the ruff-formatter; the Ruff formatter is an extremely fast
     # Python code formatter designed as a drop-in replacement for Black
     -   id: ruff-format
