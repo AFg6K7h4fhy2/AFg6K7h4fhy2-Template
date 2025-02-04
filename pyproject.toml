@@ -17,6 +17,10 @@ pre-commit = "^3.7.0"
 "Repository Issues" = "https://github.com/AFg6K7h4fhy2/AFg6K7h4fhy2-Template/issues"
 "Author Homepage" = "https://github.com/AFg6K7h4fhy2"
 
+[tool.ruff.format]
+quote-style = "double"   # use single quotes
+indent-style = "tab"     # use tabs instead of spaces
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
