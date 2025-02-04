@@ -98,6 +98,11 @@ repos:
           "--ignore=E731",
           # indentation contains tabs (sorry, I like tabs)
           "--ignore=W191",
+          # found useless expression. ignore since .qmd displays
+          "--ignore=B018",
+          # {name} is too complex ({complexity} > {max_complexity})
+          # note: ignored on select repositories
+          "--ignore=C901",
           # E and W: pycodestyle, standard PEP8 errors and pycodestyle warnings.
           # F: pyflakes warnings (e.g., unused variables, undefined names).,
           # B: flake8-bugbear (useful best practices).
@@ -105,6 +110,7 @@ repos:
           # C90: McCabe complexity (cyclomatic complexity).
           # UP: pyupgrade, Python version compatibility
           "--select=E,W,F,B,C90,UP,SIM",
+          # linter checks for lines, but doesn't fix, default is 88
           "--line-length=79",
           # lint all files in the current directory, and fix any fixable errors.
           "--fix"]
