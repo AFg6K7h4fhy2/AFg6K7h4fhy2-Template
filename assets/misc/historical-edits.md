@@ -20,4 +20,9 @@ For Python `pre-commit` hooks:
           "--line-length", "79"]
         stages:
           - pre-commit
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.7.2
+    hooks:
+      - id: ruff
+        args: ["--ignore=E741", "--ignore=E731", "--fix"]
 ```
