@@ -98,6 +98,8 @@ repos:
           "--ignore=E731",
           # indentation contains tabs (sorry, I like tabs)
           "--ignore=W191",
+          # found useless expression. ignore since .qmd displays
+          "--ignore=B018",
           # E and W: pycodestyle, standard PEP8 errors and pycodestyle warnings.
           # F: pyflakes warnings (e.g., unused variables, undefined names).,
           # B: flake8-bugbear (useful best practices).
