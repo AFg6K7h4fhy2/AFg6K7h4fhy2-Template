@@ -26,3 +26,24 @@ For Python `pre-commit` hooks:
       - id: ruff
         args: ["--ignore=E741", "--ignore=E731", "--fix"]
 ```
+
+For R `pre-commit` hooks:
+
+
+```yaml
+################################################################################
+# R
+################################################################################
+-   repo: https://github.com/lorenzwalthert/precommit
+    rev: v0.4.3.9003
+    hooks:
+    -   id: style-files
+    -   id: lintr
+```
+
+The contents of `.lintr`, which must be present for the R commit hooks:
+
+```
+linters: linters_with_defaults(object_usage_linter = NULL)
+encoding: "UTF-8"
+```
